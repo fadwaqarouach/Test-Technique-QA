@@ -1,0 +1,36 @@
+{
+  "name": "cypress-cucumber-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "start": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^14.0.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "esbuild": "^0.24.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "html": {
+      "enabled": true,
+      "output": "report/rapport-complet.html"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "report/messages.ndjson"
+    }
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.50.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
