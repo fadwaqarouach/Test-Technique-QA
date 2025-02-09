@@ -23,5 +23,7 @@ npx playwright test --headed
 
 *Scénario Testé :*
   Accès à la page de sélection bancaire
+  
   Recherche et sélection d’une banque
+  
   Connexion et autorisation d’accès
