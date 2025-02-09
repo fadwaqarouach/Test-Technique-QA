@@ -1,16 +1,16 @@
 Test Automatisé de Sélection Bancaire – Algoan (Playwright)
 
--- Objectif :
+*Objectif :*
 Automatiser la sélection d’une banque et vérifier la redirection vers l’authentification.
 
 
--- Installation :
+*Installation :*
  
 npm install
 
 npx playwright install
 
--- Exécution des Tests :
+*Exécution des Tests :*
 
 Tous les tests :
 npx playwright test
@@ -21,7 +21,7 @@ npx playwright test tests/selection_bancaire.spec.ts
 Mode visuel (debug) :
 npx playwright test --headed
 
--- Scénario Testé :
+*Scénario Testé :*
   Accès à la page de sélection bancaire
   Recherche et sélection d’une banque
   Connexion et autorisation d’accès
