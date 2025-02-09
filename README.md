@@ -1,4 +1,5 @@
 Test Automatisé de Sélection Bancaire – Algoan (Playwright)
+
 -- Objectif :
 Automatiser la sélection d’une banque et vérifier la redirection vers l’authentification.
 
