@@ -7,6 +7,7 @@ Automatiser la sélection d’une banque et vérifier la redirection vers l’au
 -- Installation :
  
 npm install
+
 npx playwright install
 
 -- Exécution des Tests :
