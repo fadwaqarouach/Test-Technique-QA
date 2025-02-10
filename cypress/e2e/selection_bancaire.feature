@@ -1,16 +1,16 @@
-Feature: Sélection bancaire sur l'application Transaction Data
+Feature: Connexion à Algoan Bank et validation des données
 
-  Scenario: L'utilisateur sélectionne une banque et se connecte sans incidents
-    Given L'utilisateur accède à la page de sélection bancaire
-    When L'utilisateur coche la case d'acceptation des conditions
-    And L'utilisateur clique sur le bouton "Continuer vers le choix de la banque"
-    And L'utilisateur sélectionne "Algoan Bank"
-    And L'utilisateur clique sur "Connexion avec QR Code"
-    And L'utilisateur clique sur "Redirection vers la banque"
-    And L'utilisateur clique sur le bouton "Admin"
-    And L'utilisateur clique sur "Connecter la banque"
-    And L'utilisateur vérifie l'absence d'incidents
-    And L'utilisateur clique sur "Connecter la banque"
-    And L'utilisateur clique sur "Autoriser l’accès"
-    And L'utilisateur valide l'agrégation
-    Then L'utilisateur termine le processus
+Scenario: L'utilisateur connecte sa banque Algoan avec succès
+  Given L'utilisateur accède à la page de connexion bancaire
+  When L'utilisateur coche la case de consentement
+  And L'utilisateur clique sur le bouton "Continuer vers le choix de la banque"
+  And L'utilisateur clique sur le champ de recherche de banque
+  And L'utilisateur saisit "algoan bank" dans le champ de recherche
+  And L'utilisateur sélectionne "Algoan Bank" dans la liste
+  And L'utilisateur clique sur le bouton "Connexion avec QR Code"
+  And L'utilisateur clique sur le bouton de redirection bancaire
+  And L'utilisateur sélectionne les informations de scoring
+  And L'utilisateur clique sur le bouton "Connecter la banque"
+  And L'utilisateur clique sur le bouton "Autoriser l’accès"
+  And L'utilisateur valide l'agrégation des comptes
+  Then L'utilisateur finalise le processus en cliquant sur le bouton de fin
